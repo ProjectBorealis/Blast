@@ -1,4 +1,5 @@
 compiler/
+bin/
 !compiler/cmake
 lib/
 sdk/extensions/serialization/source/generated/
