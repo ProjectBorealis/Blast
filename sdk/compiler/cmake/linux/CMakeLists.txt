@@ -17,10 +17,10 @@ SET(BLAST_SLN_RELEASE_COMPILE_DEFS NDEBUG;)
 # Include all of the projects
 INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlast.cmake)
 INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastGlobals.cmake)
-INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastTk.cmake)
+#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastTk.cmake)
 INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtShaders.cmake)
 INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtStress.cmake)
-INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtPhysX.cmake)
+#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtPhysX.cmake)
 INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtAuthoring.cmake)
 # INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtRT.cmake)
 
@@ -28,8 +28,8 @@ IF(${UE4_LINUX_CROSSCOMPILE})
 	#This uses the Windows CapnProto exe so it works
 	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtAssetUtils.cmake)
 	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtSerialization.cmake)
-	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtTkSerialization.cmake)
-	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtPxSerialization.cmake)
+	#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtTkSerialization.cmake)
+	#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtPxSerialization.cmake)
 
 	#The UE4 Linux cross tools don't include libc++, it's in the UE4 source, however UE4 uses libc++
 	#and not libstdc++ so link this statically to avoid a dependency
@@ -42,6 +42,6 @@ ELSE()
 
 	#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtImport.cmake)
 	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtSerialization.cmake)
-	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtTkSerialization.cmake)
-	INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtPxSerialization.cmake)
+	#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtTkSerialization.cmake)
+	#INCLUDE(${PROJECT_CMAKE_FILES_DIR}/NvBlastExtPxSerialization.cmake)
 ENDIF()

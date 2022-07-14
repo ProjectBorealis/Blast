@@ -13,9 +13,9 @@ SET(SOLVER_SOURCE_DIR ${PROJECT_SOURCE_DIR}/lowlevel/source)
 
 SET(SERIAL_GENERATED_SOURCE_DIR ${SERIAL_EXT_SOURCE_DIR}/generated)
 
-FIND_PACKAGE(PxSharedSDK ${PM_physxsdk_VERSION} REQUIRED)
-FIND_PACKAGE(PhysXSDK ${PM_pxshared_VERSION} REQUIRED)
-FIND_PACKAGE(CapnProtoSDK $ENV{PM_CapnProto_VERSION} REQUIRED)
+FIND_PACKAGE(PXSHAREDSDK ${PM_physxsdk_VERSION} REQUIRED)
+FIND_PACKAGE(PHYSXSDK ${PM_pxshared_VERSION} REQUIRED)
+FIND_PACKAGE(CAPNPROTOSDK $ENV{PM_CapnProto_VERSION} REQUIRED)
 
 # Include here after the directories are defined so that the platform specific file can use the variables.
 include(${PROJECT_CMAKE_FILES_DIR}/${TARGET_BUILD_PLATFORM}/NvBlastExtSerialization.cmake)
@@ -108,7 +108,7 @@ SOURCE_GROUP("include" FILES ${EXT_SERIALIZATION_INCLUDES})
 SOURCE_GROUP("src\\serialization" FILES ${EXT_SERIALIZATION_FILES})
 SOURCE_GROUP("src\\serialization\\DTO" FILES ${DTO_SOURCE_FILES})
 SOURCE_GROUP("src\\serialization\\generated" FILES ${CAPNP_SRCS} ${CAPNP_HDRS})
-SOURCE_GROUP("src\\serialization\\CapnProtoSDK" FILES ${CAPNPROTOSDK_SOURCE_FILES})
+SOURCE_GROUP("src\\serialization\\CAPNPROTOSDK" FILES ${CAPNPROTOSDK_SOURCE_FILES})
 
 # Target specific compile options
 

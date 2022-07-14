@@ -96,7 +96,7 @@ SET(PROJECT_CMAKE_FILES_DIR compiler/cmake/)
 
 # These projects are common to all platforms
 ADD_SUBDIRECTORY(${BLAST_ROOT_DIR}/sdk "${CMAKE_CURRENT_BINARY_DIR}/blast_bin")
-ADD_SUBDIRECTORY(${BLAST_ROOT_DIR}/test "${CMAKE_CURRENT_BINARY_DIR}/test_bin")
+#ADD_SUBDIRECTORY(${BLAST_ROOT_DIR}/test "${CMAKE_CURRENT_BINARY_DIR}/test_bin")
 
 # Include the platform specific configuration
 INCLUDE(${PROJECT_CMAKE_FILES_DIR}${TARGET_BUILD_PLATFORM}/CMakeLists.txt)

@@ -19,8 +19,6 @@ if (PXSHAREDSDK_FOUND)
 	# Also may not be good enough for all users.
 	SET(PXSHAREDSDK_INCLUDE_DIRS 
 		${PXSHAREDSDK_PATH}/include
-		${PXSHAREDSDK_PATH}/include/filebuf
 		${PXSHAREDSDK_PATH}/include/foundation
-		${PXSHAREDSDK_PATH}/src/filebuf/include
 	)
 endif()
