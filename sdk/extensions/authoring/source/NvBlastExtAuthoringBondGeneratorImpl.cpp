@@ -1267,7 +1267,6 @@ int32_t BlastBondGeneratorImpl::buildDescFromInternalFracture(FractureTool* tool
 		chunkTrianglesOffsets.push_back(0);
 		for (uint32_t i = 0; i < chunkCount; ++i)
 		{
-			const float SCALE_FACTOR = 1.001f;
 			NvcVec3 centroid = {resultChunkDescriptors[i].centroid[0], resultChunkDescriptors[i].centroid[1],
 			                resultChunkDescriptors[i].centroid[2]};
 			for (uint32_t k = 0; k < trianglesCount[i]; ++k)

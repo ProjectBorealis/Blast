@@ -39,6 +39,7 @@
 #include <map>
 #include <stack>
 #include <functional>
+#include <cmath>
 #include "NvBlastExtAuthoringVSA.h"
 #include <float.h>
 #include "NvBlastExtAuthoringTriangulator.h"

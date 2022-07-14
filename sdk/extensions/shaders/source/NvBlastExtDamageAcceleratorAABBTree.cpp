@@ -30,6 +30,7 @@
 #include "NvBlastAssert.h"
 #include "PxVec4.h"
 #include <algorithm>
+#include <cmath>
 
 using namespace physx;
 

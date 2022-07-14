@@ -4,6 +4,7 @@
 #include "NvBlastExtAuthoringFractureTool.h"
 #include <NvBlastPxSharedHelpers.h>
 #include <algorithm>
+#include <cmath>
 
 
 using namespace physx;

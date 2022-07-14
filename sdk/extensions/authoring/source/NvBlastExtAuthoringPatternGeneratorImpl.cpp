@@ -38,6 +38,7 @@
 #include <NvBlastPxSharedHelpers.h>
 
 #include <vector>
+#include <cmath>
 
 using namespace Nv::Blast;
 using namespace physx;
